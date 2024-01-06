@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the task management app which has common functionality of storing the task and manage them. It is frontend project only so it doesn't connect with api or server. I am still performing work on this project so it is in bulid stage.">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/9329/9329803.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="436">
+    <meta property="og:image:height" content="228">
+    <meta property="og:title" content="Task management app by Aman Kumar">
+    <meta property="og:description" content="This is the task management app which has common functionality of storing the task and manage them. It is frontend project only so it doesn't connect with api or server.">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/521a09b333.js" crossorigin="anonymous"></script>
+    <title>Task Management</title>
+</head>
+
+<body>
+    <div class="intro-container">
+        <div class="img-container">
+            <img src="./images/4942219.jpg" alt="" class="img-holder">
+        </div>
+        <div class="text-container">
+            <h1 class="heading">Task Management Application</h1>
+            <p class="intro-desc">This is the task management app which has common functionality of storing the task and manage them. It is frontend project only so it doesn't connect with api or server. I am still performing work on this project so it is in bulid stage. You can also visit my more project by my portflio: <a href="https://amankumar-dev.github.io/portfolio2/" class="protfolio" target="_blank">Aman Kumar</a></p>
+            <button class="task-btn"><a href="#main-section" class="main-section-link">Click me</a></button>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <h1 class="data">Records</h1>
+        <table class="record-data" id="main-section">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                    <th>Priority</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                
+            </tbody>
+        </table>
+        <button class="add-task">Add Task</button>
+    </div>
+
+    <div class="form-holder">
+        <form action="" class="data-collector">
+            <div class="id-holder formdiv">
+                <p class="id-name">Task Id:</p>
+                <input type="text" class="id-input">
+            </div>
+
+            <div class="title-holder formdiv">
+                <p class="title-name">Title:</p>
+                <input type="text" class="title-input">
+            </div>
+
+            <div class="desc-holder formdiv">
+                <p class="desc-name">Description:</p>
+                <input type="text" class="desc-input">
+            </div>
+
+            <div class="sdate-holder formdiv">
+                <p class="sdate-name">Start Date:</p>
+                <input type="date" class="sdate-input">
+            </div>
+
+            <div class="edate-holder formdiv">
+                <p class="edate-name">End Date:</p>
+                <input type="date" class="edate-input">
+            </div>
+
+            <div class="status-holder formdiv">
+                <p class="status">Status:</p>
+                <select name="Status-list" class="status-list">
+                    <option value="In Progress">IN_PROGRESS</option>
+                    <option value="Completed">COMPLETED</option>
+                    <option value="On Hold">ON_HOLD</option>
+                    <option value="Aborted">ABORTED</option>
+                    <option value="Not Started">NOT_STARTED</option>
+                    <option value="To Review">TO_REVIEW</option>
+                    <option value="Blocked">BLOCKED</option>
+                </select>
+            </div>
+
+            <div class="priority-holder formdiv">
+
+                <p class="priority">Priority:</p>
+                <select name="priority-list" class="priority-list">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+
+            <div class="submit-holder">
+                <button class="submit close">Close</button>
+                <button class="submit submitt">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

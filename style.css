@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.close-alert{
+    outline: none;
+    border: none;
+    background-color: rgb(255, 145, 0);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 30%;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 3vh;
+    transition: all ease-in-out .3s ;
+
+}
+.close-alert:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+.alert-holder{
+    width: 30%;
+    background: rgba(253, 0, 0, 0.514);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(92, 0, 0, 0.562);
+    padding:0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 35%;
+    z-index: 999;
+    transform: translateX(-500%);
+    transition: all ease-in-out .5s ;
+}
+.alert-heading{
+    margin-bottom: 2vh;
+    color: white;
+}
+.ul-alert{
+    padding:0px 10px;
+    margin-bottom: 5vh;
+}
+.rule{
+    list-style:decimal;
+    color: white;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.sb-ka-baap{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/newbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Heading */
+.heading-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    padding: 20px 0px;
+    font-size: 50px;
+    color: #000;
+}
+
+/* For login */
+.form-container {
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.075);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 20px;
+    width: 30%;
+}
+
+.login-heading {
+    text-align: center;
+}
+
+.email,
+.password {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.username,
+.password-input {
+    background-color: transparent;
+    border: 1px solid rgb(54, 54, 54);
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    width: 80%;
+    margin-top: 2vh;
+}
+
+.username::placeholder,
+.password-input::placeholder {
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.button-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in {
+    width: 30%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: rgb(242, 157, 17);
+    background: linear-gradient(90deg, rgba(242, 156, 17, 0.527) 0%, rgba(244, 105, 12, 0.534) 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: all ease-in-out 5s;
+}
+
+.log-in:hover {
+    background: rgb(242, 157, 17);
+    background: linear-gradient(90deg, rgba(242, 157, 17, 1) 0%, rgba(244, 105, 12, 1) 100%);
+    cursor: pointer;
+}
+
+.sign-up {
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.signup {
+    color: rgba(255, 68, 0, 0.623);
+    transition: all ease-in-out .3s;
+}
+
+.signup:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+.register{
+    display: none;
+}
+.open-eye,.close-eye,.open-eye-register,.close-eye-register{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1020px) {
+    .login{
+        width: 40%;
+    }
+    .alert-holder{
+        width: 40%;
+        right: 30%;
+    }
+}
+@media screen and (max-width:932px) {
+    .login {
+        width: 40%;
+    }
+    .register{
+        gap: 2vh;
+    }
+}
+@media screen and (max-width:755px) {
+    .login{
+        width: 50%;
+    }
+    .alert-holder{
+        width: 50%;
+        right: 25%;
+    }
+}
+@media screen and (max-width:670px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .login {
+        margin-top: 10vh;
+        width: 50%;
+    }
+    .alert-holder{
+        width: 60%;
+        right: 20%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .login {
+        width: 80%;
+    }
+    .alert-holder{
+        width: 70%;
+        right: 15%;
+    }
+}
+@media screen and (max-width:400px) {
+    .alert-holder{
+        width: 80%;
+        right: 10%;
+    }
+}
+@media screen and (max-width:350px) {
+    .heading {
+        font-size: 25px;
+    }
+    .alert-holder{
+        width: 95%;
+        right: 2%;
+    }
+    .login-heading {
+        font-size: 20px;
+    }
+
+    .email,
+    .password {
+        font-size: 15px;
+    }
+
+    .log-in {
+        width: 70%;
+    }
+
+    .register{
+        gap: 4vh;
+    }
+}
+
+@media screen and (max-width:255px) {
+    .login {
+        width: 97%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}

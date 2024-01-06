@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the task management app which has common functionality of storing the task and manage them. It is frontend project only so it doesn't connect with api or server. I am still performing work on this project so it is in bulid stage.">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/9329/9329803.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="436">
+    <meta property="og:image:height" content="228">
+    <meta property="og:title" content="Task management app by Aman Kumar">
+    <meta property="og:description" content="This is the task management app which has common functionality of storing the task and manage them. It is frontend project only so it doesn't connect with api or server.">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/d342744e69.js" crossorigin="anonymous"></script>
+    <title>Task Management</title>
+</head>
+
+<body>
+    <!-- <div class="alert-baap"> -->
+
+        <div class="alert-holder">
+            <h1 class="alert-heading">Attention!!</h1>
+            <div class="email-alert-holder">
+                <ul class="ul-alert">
+                    <li class="rule">Email must contain @ and .com</li>
+                    <li class="rule">Password must have minimum 8 character</li>
+                    <li class="rule">Password must have atleast one special character</li>
+                    <li class="rule">Password must have atleast one upper case and lower case alphabet</li>
+                    <li class="rule">Password must have atlease one integer</li>
+                </ul>
+            </div>
+            <button class="close-alert">Close</button>
+        </div>
+    <!-- </div> -->
+        <div class="sb-ka-baap">
+            <div class="heading-container">
+                <h1 class="heading">Task Management</h1>
+        </div>
+        <div class="form-container">
+            <form action="" class="login">
+                <h2 class="login-heading">Log In</h2>
+                <div class="email-section">
+                    <p class="email">Email:</p>
+                    <input type="email" class="username" required placeholder="Enter your email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="paasword-section">
+                    <p class="password">Password:</p>
+                    <div class="password-holder">
+                        <input type="password" required placeholder="Enter your password" class="password-input">
+                        <i class="fa-solid fa-eye open-eye active-eye"></i>
+                        <i class="fa-solid fa-eye-slash close-eye"></i>
+                    </div>
+                </div>
+                <div class="button-holder">
+                    <button class="log-in">Log In</button>
+                </div>
+                <div class="sign-up-container">
+                    <p class="sign-up">New User?<span class="signup register-link"> Sign-up</span></p>
+                </div>
+            </form>
+
+            <form action="" class="login register">
+                <h2 class="login-heading">Sign Up</h2>
+                <div class="email-section name-section">
+                    <p class="email">Username:</p>
+                    <input type="text" class="username username-name" required placeholder="Enter your Username">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="paasword-section">
+                    <p class="password">Password:</p>
+                    <div class="password-holder">
+                        <input type="password" required placeholder="Enter your password"
+                            class="password-input password-r">
+                        <i class="fa-solid fa-eye open-eye-register "></i>
+                        <i class="fa-solid fa-eye-slash close-eye-register"></i>
+                    </div>
+                </div>
+                <div class="email-section">
+                    <p class="email">Email:</p>
+                    <input type="email" class="username usernamer email-reg-input" required placeholder="Enter your email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="button-holder">
+                    <button class="log-in register-btn">Sign Up</button>
+                </div>
+                <div class="sign-up-container">
+                    <p class="sign-up">Existing User?<span class="signup login-link"> Log in</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
